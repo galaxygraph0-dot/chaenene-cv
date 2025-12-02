@@ -2,13 +2,12 @@
 <html lang="en">
     <head>
         <met#aeb3b8et="utf-8">
+            <!-- Favicon -->
+        <link href="img/logo.jpg" rel="icon" type="image/jpeg">
         <title>Chaenene Lifutu - CV</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
-
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,16 +27,39 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Ensure skills section matches site background (no white cards) */
+            #skills .card, #skills .card-header, #skills .card-body {
+                background: transparent !important;
+                border: 0 !important;
+                color: inherit !important;
+            }
+            #skills .progress { background: rgba(255,255,255,0.06) !important; }
+            #skills .progress .progress-bar { background: #007bff !important; }
+        </style>
     </head>
 
     <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0f1419; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+            <div class="spinner" style="border: 4px solid rgba(255,255,255,0.1); border-top: 4px solid #007bff; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+            <style>
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+            </style>
         </div>
-        <!-- Spinner End -->
+        <!-- Preloader End -->
+        <script>
+            // Hide preloader when page loads
+            window.addEventListener('load', function() {
+                var preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.style.display = 'none';
+                }
+            });
+        </script>
 
         <div class="container">
             <div class="row g-5">
@@ -46,18 +68,18 @@
                        
                         <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Profile photo">
                         <h1 class="text-primary mt-2"><strong>CHAENENE LIFUTU</strong></h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
+                        <div class="mb-4" style="height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <h4 class="typed-text-output d-inline-block text-light" style="margin: 0; font-size: 1.3rem; font-weight: 500;"></h4>
                             <div class="typed-text d-none">Mobile & Web Designer, Graphic Designer, UI/UX Designer</div>
                         </div>
                         <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/profile.php?id=61561951127116" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/kambale-chaenene-244656331" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/galaxy_graph17/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://t.me/256773457957" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
                         </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="" class="btn w-50 border-end">Download CV</a>
+                            <div class="d-flex align-items-end justify-content-between border-top">
+                            <a href="cv.pdf" class="btn w-50 border-end download-page-pdf">Download CV</a>
                             <a href="https://wa.me/256773457957?text=Hello%20Chaenene,%20I%20would%20like%20to%20discuss%20a%20design%20project%20with%20you." class="btn w-50" target="_blank" rel="noopener">Contact Me</a>
                         </div>
                     </div>
@@ -67,38 +89,33 @@
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="about">
                         
                         <h2 class="title pb-3 mb-5">About Me</h2>
-                        <p>Diam rebum sea stet rebum ea. Et kasd amet et accusam elitr voluptua. Tempor dolore sit et accusam ipsum erat duo. Gubergren et takimata dolor duo amet et sanctus elitr lorem. Ipsum amet duo rebum dolor labore. No diam duo lorem elitr dolor takimata elitr no. Magna et gubergren duo ipsum sed, amet ea voluptua dolores voluptua dolor ipsum et. Sit takimata erat consetetur invidunt lorem consetetur. Lorem magna diam vero nonumy. Aliquyam diam voluptua magna et magna nonumy. Accusam rebum clita et sit vero lorem, voluptua amet sit eos no et labore vero, et consetetur justo et et sit aliquyam labore, sit erat lorem justo dolores kasd est sit. Dolor et accusam ea et dolor sit.</p>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Chaenene Lifutu
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Birthday:</span> 17 July 1999
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Degree:</span> Bachelor
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Experience:</span> 6 Years (4 years Graphic Design, 2 years Mobile & Web Design)
-                            </div>
-                            <div class="col-sm-6 py-1">
-                               
-                                <span class="fw-medium text-primary">Phone:</span> +256-773-457-957  
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> kambaleblessing0@gmail.com  
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> Kampala, Uganda
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Freelance:</span> Available
-                            </div>
+                        <h4 class="mb-3">I combine Graphic Design, Mobile Apps & Web Development</h4>
+                        <p>I provide creative and technical services spanning <strong>Graphic Design</strong>, <strong>Mobile App</strong> design/development, and <strong>Web Development</strong>.</p>
+                        
+                        <!-- Personal Details -->
+                        <div class="personal-info mt-4 mb-3">
+                            <p style="margin-bottom: 8px;"><strong>Name:</strong> Chaenene Lifutu</p>
+                            <p style="margin-bottom: 8px;"><strong>Birthday:</strong> 17 July 1999</p>
+                            <p style="margin-bottom: 8px;"><strong>Degree:</strong> Bachelor in Business Computing</p>
+                            <p style="margin-bottom: 8px;"><strong>Experience:</strong> 6 Years (4 years Graphic Design, 2 years Mobile & Web Design)</p>
+                            <p style="margin-bottom: 8px;"><strong>Location:</strong> Kampala, Uganda</p>
+                            <p style="margin-bottom: 8px;"><strong>Contact:</strong> +256-773-457-957 | kambaleblessing0@gmail.com</p>
                         </div>
-                        <div class="row g-4">
+
+                        <div style="display: flex; flex-direction: column;">
+                            <div class="collapse mt-3" id="about-more" style="order: 1;">
+                                <div class="card card-body" style="background:transparent; border:0;">
+                                    <p>I have experience delivering end-to-end visual and interactive experiences — from initial branding and concept, through designing high-fidelity interfaces, to building responsive websites and mobile-first applications.</p>
+                                    <p>I collaborate with clients to understand goals, craft user-centered designs, and implement solutions that perform well across devices. When working on projects I focus on clarity, strong visual hierarchy, and reliable cross-browser behavior. I also provide ongoing support and iterative improvements after launch.</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" style="order: 2; align-self: flex-start;" data-toggle="collapse" data-target="#about-more" aria-expanded="false" aria-controls="about-more">See More</button>
+                        </div>
+                        <!-- Stats Cards -->
+                        <div class="row g-4 mt-5">
                             <div class="col-md-4 col-lg-6 col-xl-4">
                                 <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">6</h1>
+                                    <h1 class="flex-shrink-0 text-primary mb-0" style="font-size: 2.5rem;">6</h1>
                                     <div class="ps-3">
                                         <p class="mb-0">Years of</p>
                                         <h5 class="mb-0">Experience</h5>
@@ -107,7 +124,8 @@
                             </div>
                             <div class="col-md-4 col-lg-6 col-xl-4">
                                 <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">100</h1>
+                                    <h1 class="flex-shrink-0 text-primary mb-0" style="font-size: 2.5rem;">99</h1>
+                                    <span class="text-primary" style="font-size: 1.5rem; margin-left: -5px; margin-top: -5px;">+</span>
                                     <div class="ps-3">
                                         <p class="mb-0">Happy</p>
                                         <h5 class="mb-0">Clients</h5>
@@ -116,7 +134,8 @@
                             </div>
                             <div class="col-md-4 col-lg-6 col-xl-4">
                                 <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">200</h1>
+                                    <h1 class="flex-shrink-0 text-primary mb-0" style="font-size: 2.5rem;">199</h1>
+                                    <span class="text-primary" style="font-size: 1.5rem; margin-left: -5px; margin-top: -5px;">+</span>
                                     <div class="ps-3">
                                         <p class="mb-0">Complete</p>
                                         <h5 class="mb-0">Projects</h5>
@@ -128,39 +147,108 @@
                     <!-- About End -->
 
                     <!-- Skills Start -->
+                    <!-- Skills Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="skills">
                         <h2 class="title pb-3 mb-5">Skills</h2>
                         <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Mobile app design</p>
-                                        <p class="mb-2">85%</p>
+                            <div class="col-12">
+                                <div id="accordionSkill" class="accordion">
+                                    <div class="card">
+                                        <div id="personalSkill" class="card-header" style="background:transparent; border:0; color:inherit;">
+                                            <h2>
+                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                    <i class="fas fa-circle"></i> Personal Skill
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapse1" class="collapse show" aria-labelledby="personalSkill" data-parent="#accordionSkill">
+                                            <div class="card-body" style="background:transparent; border:0; color:inherit;">
+                                                <ul class="personalSkill">
+                                                    <li>
+                                                        <div class="skill-title">
+                                                            <span>Creativity</span>
+                                                        </div>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title">
+                                                            <span>Innovation</span>
+                                                        </div>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title">
+                                                            <span>Communication</span>
+                                                        </div>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title">
+                                                            <span>Teamwork</span>
+                                                        </div>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Website design</p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Graphic design</p>
-                                        <p class="mb-2">80%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                    <div class="card">
+                                        <div id="proSkill" class="card-header" style="background:transparent; border:0; color:inherit;">
+                                            <h2>
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                    <i class="fas fa-circle"></i> Professional Skill
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapse2" class="collapse" aria-labelledby="proSkill" data-parent="#accordionSkill">
+                                            <div class="card-body" style="background:transparent; border:0; color:inherit;">
+                                                <ul class="pro-skill">
+                                                    <li>
+                                                        <div class="skill-title"><span>Graphic Design</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>HTML &amp; CSS</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>JavaScript</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>Flutter</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>TypeScript</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width:82%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>Python</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width:78%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>PHP</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="skill-title"><span>Photoshop &amp; Illustrator</span></div>
+                                                        <div class="progress mb-3"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -176,38 +264,32 @@
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
                                 <h5 class="mb-1">Graphic Designer</h5>
-                                <p class="mb-2">Freelance | <small>2020 - 2024</small></p>
-                                <p>Specialized in brand identity, marketing materials, and social graphics. Created stunning visual designs for various clients across different industries.</p>
+                                <p class="mb-2">bugema University students association | <small>2023 - 2025</small></p>
                             </div>
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
                                 <h5 class="mb-1">Mobile App UI/UX Designer</h5>
-                                <p class="mb-2">Design Studio | <small>2023 - 2025</small></p>
-                                <p>Designed intuitive mobile app interfaces and user experiences. Created interactive prototypes and user flows for fintech and e-commerce applications.</p>
+                                <p class="mb-2">Tech Solutions Inc | <small>2024 - 2025</small></p>
                             </div>
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
                                 <h5 class="mb-1">Web Designer</h5>
-                                <p class="mb-2">Digital Agency | <small>2023 - 2025</small></p>
-                                <p>Designed responsive websites and landing pages. Created compelling web experiences that drive user engagement and conversions for clients.</p>
-                            </div>
+                                <p class="mb-2">Kampala Web Studios | <small>2024 - 2025</small></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">Web Designer</h5>
+                                <p class="mb-2">Hotel bia-exauce | <small>2024 - 2025</small></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">Mobile App Developer</h5>
+                                <p class="mb-2"> Digital Hub Kampala  | <small>2024 - 2025</small></p>
                         </div>
                     </section>
                     <!-- Experience End -->
 
-                    <!-- Subscribe Start -->
-                    <section class="wow fadeInUp" data-wow-delay="0.1s" id="newsletter">
-                        <!-- Newsletter kept as-is per user request -->
-                        <div class="bg-secondary text-center p-5">
-                            <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
-                            <p class="text-white">Subscribe and get my latest article in your inbox</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Subscribe End -->
+
 
                     <!-- Services Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" id="services">
@@ -243,85 +325,116 @@
                         <h2 class="title pb-3 mb-5">Portfolio</h2>
                         <div class="row">
                             <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row portfolio-container">
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="Brand Identity Pack">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light" aria-hidden="true"></i>
-                                                </a>
+                                <div class="owl-carousel owl-theme">
+                                    <!-- Graphic Design Slide -->
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="content-left">
+                                                    <div class="title-resume">
+                                                        <h3>Graphic Design</h3>
+                                                        <h2>Creative visual solutions for <span>Branding & Marketing</span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="content-right">
+                                                    <ul style="list-style: none; padding: 0;">
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Logo Design</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Professional brand identity creation</p>
+                                                        </li>
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Print Materials</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Brochures, posters, business cards</p>
+                                                        </li>
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Digital Graphics</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Social media, web graphics, illustrations</p>
+                                                        </li>
+                                                        <li>
+                                                            <h5 style="margin: 0 0 5px 0;">Packaging Design</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Product packaging and labels</p>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#portfolioGraphicModal">View Images</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <h5 class="mb-2">Brand Identity Pack</h5>
-                                        <p class="text-muted mb-0">Logo, color system, and stationery.</p>
                                     </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="Food Delivery App Concept">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light" aria-hidden="true"></i>
-                                                </a>
+
+                                    <!-- Mobile App Slide -->
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="content-left">
+                                                    <div class="title-resume">
+                                                        <h3>Mobile App</h3>
+                                                        <h2>User-friendly app design and <span>Development</span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="content-right">
+                                                    <ul style="list-style: none; padding: 0;">
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">UI/UX Design</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Intuitive app interfaces and user experiences</p>
+                                                        </li>
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Prototyping</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Interactive prototypes and wireframes</p>
+                                                        </li>
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">App Development</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Frontend implementation and integration</p>
+                                                        </li>
+                                                        <li>
+                                                            <h5 style="margin: 0 0 5px 0;">Testing & Refinement</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Quality assurance and performance optimization</p>
+                                                        </li>
+                                                    </ul>
+<button class="btn btn-primary mt-3" data-toggle="modal" data-target="#portfolioMobileModal">View Images</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <h5 class="mb-2">Food Delivery App Concept</h5>
-                                        <p class="text-muted mb-0">Mobile UI screens and clickable prototype.</p>
                                     </div>
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="E-commerce Landing Page">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light" aria-hidden="true"></i>
-                                                </a>
+
+                                    <!-- Web Development Slide -->
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="content-left">
+                                                    <div class="title-resume">
+                                                        <h3>Web Development</h3>
+                                                        <h2>Modern responsive websites and <span>Web Applications</span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="content-right">
+                                                    <ul style="list-style: none; padding: 0;">
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Responsive Design</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Mobile-first, cross-device compatible websites</p>
+                                                        </li>
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Frontend Development</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">HTML5, CSS3, JavaScript implementation</p>
+                                                        </li>
+                                                        <li style="margin-bottom: 15px;">
+                                                            <h5 style="margin: 0 0 5px 0;">Backend Integration</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">API integration and server-side functionality</p>
+                                                        </li>
+                                                        <li>
+                                                            <h5 style="margin: 0 0 5px 0;">Performance & SEO</h5>
+                                                            <p style="margin: 0; font-size: 0.9rem; color: #888;">Optimization for speed and search visibility</p>
+                                                        </li>
+                                                    </ul>
+<button class="btn btn-primary mt-3" data-toggle="modal" data-target="#portfolioWebModal">View Images</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <h5 class="mb-2">E-commerce Landing Page</h5>
-                                        <p class="text-muted mb-0">Responsive product page & checkout UX.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="Social Media Campaign Graphics">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h5 class="mb-2">Social Media Campaign Graphics</h5>
-                                        <p class="text-muted mb-0">Carousel posts and ad creatives.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="Personal Portfolio Website">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h5 class="mb-2">Personal Portfolio Website</h5>
-                                        <p class="text-muted mb-0">Case study, UX flows and style guide.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="Logo & Icon Pack">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h5 class="mb-2">Logo & Icon Pack</h5>
-                                        <p class="text-muted mb-0">Custom logos and icons for brands.</p>
                                     </div>
                                 </div>
                             </div>
@@ -454,5 +567,200 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <!-- Portfolio Image Modals -->
+        <!-- Graphic Design Images Modal -->
+        <div class="modal fade" id="portfolioGraphicModal" tabindex="-1" role="dialog" aria-labelledby="portfolioGraphicLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="background: #1a1a2e; border: 0;">
+                    <div class="modal-header" style="border-bottom: 1px solid #333;">
+                        <h5 class="modal-title" id="portfolioGraphicLabel">Graphic Design Works</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio5.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio5.jpg" alt="Graphic Work 1" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio6.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio6.jpg" alt="Graphic Work 2" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio7.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio7.jpg" alt="Graphic Work 3" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio8.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio8.jpg" alt="Graphic Work 4" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio9.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio9.jpg" alt="Graphic Work 5" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio10.png" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio10.png" alt="Graphic Work 6" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio11.png" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio11.png" alt="Graphic Work 7" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio12.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio12.jpg" alt="Graphic Work 8" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <a href="img/portfolio13.jpg" data-lightbox="graphic-gallery">
+                                    <img src="img/portfolio13.jpg" alt="Graphic Work 9" class="img-fluid" style="width:100%; height:100px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile App Images Modal -->
+        <div class="modal fade" id="portfolioMobileModal" tabindex="-1" role="dialog" aria-labelledby="portfolioMobileLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="background: #1a1a2e; border: 0;">
+                    <div class="modal-header" style="border-bottom: 1px solid #333;">
+                        <h5 class="modal-title" id="portfolioMobileLabel">Mobile App Works</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <a href="img/mobile_app_1.jpg" data-lightbox="mobile-gallery">
+                                    <img src="img/mobile_app_1.jpg" alt="Mobile App 1" class="img-fluid" style="width:100%; height:200px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="img/mobile_app_2.jpg" data-lightbox="mobile-gallery">
+                                    <img src="img/mobile_app_2.jpg" alt="Mobile App 2" class="img-fluid" style="width:100%; height:200px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Development Images Modal -->
+        <div class="modal fade" id="portfolioWebModal" tabindex="-1" role="dialog" aria-labelledby="portfolioWebLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="background: #1a1a2e; border: 0;">
+                    <div class="modal-header" style="border-bottom: 1px solid #333;">
+                        <h5 class="modal-title" id="portfolioWebLabel">Web Development Works</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <a href="img/web_development_1.jpg" data-lightbox="web-gallery">
+                                    <img src="img/web_development_1.jpg" alt="Web Dev 1" class="img-fluid" style="width:100%; height:200px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="img/web_development_2.jpg" data-lightbox="web-gallery">
+                                    <img src="img/web_development_2.jpg" alt="Web Dev 2" class="img-fluid" style="width:100%; height:200px; object-fit:cover; border-radius:3px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden grouped anchors for galleries -->
+        <a href="img/portfolio1.jpg" data-lightbox="graphic-gallery" style="display:none"></a>
+        <a href="img/portfolio2.jpg" data-lightbox="graphic-gallery" style="display:none"></a>
+        <a href="img/portfolio3.jpg" data-lightbox="graphic-gallery" style="display:none"></a>
+        <a href="img/portfolio4.jpg" data-lightbox="graphic-gallery" style="display:none"></a>
+        <a href="img/portfolio5.jpg" data-lightbox="graphic-gallery" style="display:none"></a>
+        <a href="img/portfolio6.jpg" data-lightbox="graphic-gallery" style="display:none"></a>
+
+        <a href="img/portfolio7.jpg" data-lightbox="mobile-gallery" style="display:none"></a>
+        <a href="img/portfolio8.jpg" data-lightbox="mobile-gallery" style="display:none"></a>
+        <a href="img/portfolio9.jpg" data-lightbox="mobile-gallery" style="display:none"></a>
+
+        <a href="img/portfolio10.png" data-lightbox="web-gallery" style="display:none"></a>
+        <a href="img/portfolio11.png" data-lightbox="web-gallery" style="display:none"></a>
+        <a href="img/portfolio12.jpg" data-lightbox="web-gallery" style="display:none"></a>
+        <a href="img/portfolio13.jpg" data-lightbox="web-gallery" style="display:none"></a>
+
+        <!-- Scripts -->
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+        <script>
+            // Initialize counters
+            jQuery(document).ready(function() {
+                jQuery('[data-toggle="counter-up"]').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            });
+        </script>
+        <script>
+            // One-click download handler for file anchors (fallback)
+            (function(){
+                document.addEventListener('DOMContentLoaded', function(){
+                    var buttons = document.querySelectorAll('.download-cv');
+                    buttons.forEach(function(btn){
+                        btn.addEventListener('click', function(e){
+                            e.preventDefault();
+                            var url = btn.getAttribute('href') || 'cv.pdf';
+                            var a = document.createElement('a');
+                            a.href = url;
+                            a.download = url.split('/').pop() || 'cv.pdf';
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                        });
+                    });
+
+                    // Page PDF generator for CV page
+                    var pageButtons = document.querySelectorAll('.download-page-pdf');
+                    pageButtons.forEach(function(pb){
+                        pb.addEventListener('click', function(e){
+                            e.preventDefault();
+                            var element = document.querySelector('.container') || document.body;
+                            var opt = {
+                                margin:       0.5,
+                                filename:     'Chaenene_CV.pdf',
+                                image:        { type: 'jpeg', quality: 0.98 },
+                                html2canvas:  { scale: 2, useCORS: true },
+                                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+                            };
+                            // generate and save PDF of the page content
+                            html2pdf().set(opt).from(element).save();
+                        });
+                    });
+                });
+            })();
+        </script>
     </body>
 </html>

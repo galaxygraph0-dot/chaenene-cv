@@ -88,6 +88,17 @@
     });
 
 
+    // Portfolio carousel
+    $(".owl-carousel").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1000,
+        dots: true,
+        loop: true,
+        items: 1,
+        nav: true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
+    });
+    
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
